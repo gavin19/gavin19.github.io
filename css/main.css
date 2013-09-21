@@ -16,7 +16,7 @@ body {
 }
 
 header {
-	border-bottom: 1px solid dashed;
+	border-bottom: 1px dashed;
 }
 
 h1 {
