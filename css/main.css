@@ -1,11 +1,13 @@
 * {
-	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	margin: 0;
 }
 
 body {
 	font-family: Raleway;
+	background: url(../img/brushed_@2X.png) /* Courtesy: Andre Schouten */
 }
 
 #main {
@@ -17,10 +19,12 @@ body {
 
 header {
 	border-bottom: 1px dashed;
+	margin-bottom: 5px;
 }
 
 h1 {
 	text-shadow: 1px 1px 1px rgba(66,66,66,.5);
+	margin: 5px;
 }
 
 section {
@@ -28,22 +32,33 @@ section {
 }
 
 article {
-	height: 100%;
-	display: inline-block;
 	padding: 5px;
 	background: #fff;
+	width: 100%;
 }
 
 aside {
 	display: none;
+	background: ghostwhite;
+	border-left: 1px solid rgba(66,66,66,.5);
+}
+
+article, aside {
+	vertical-align: top;
+}
+
+footer {
+	border-top: 1px solid rgba(66,66,66,.5);
+	margin-top: 5px;
 }
 
 @media (min-width: 1024px) {
-	aside {
+	aside, article {
 		display: inline-block;
-		height: 100%;
-		width: 20%;
 		padding: 5px;
+	}
+	aside {
+		width: 20%;
 	}
 	article {
 		width: 80%;
