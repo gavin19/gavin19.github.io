@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -7,7 +9,7 @@
 
 body {
 	font-family: Raleway;
-	background: url(../img/brushed_@2X.png) /* Courtesy: Andre Schouten */
+	background: url('../img/brushed_@2X.png') /* Courtesy: Andre Schouten */
 }
 
 #main {
@@ -48,6 +50,7 @@ article, aside {
 }
 
 footer {
+	border-top: 1px solid rgb(66,66,66);
 	border-top: 1px solid rgba(66,66,66,.5);
 	margin-top: 5px;
 }
